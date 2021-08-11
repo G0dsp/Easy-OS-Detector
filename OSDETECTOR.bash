@@ -17,4 +17,6 @@ ping "-c" 1 $ip > ipgrep.txt
 grep "ttl" ipgrep.txt
 echo " "
 echo "si el ttl va desde el 1-64=Linux 65-128=Windows 129-254=Solaris/AIX"
+echo " "
+whatweb $ip 2>/dev/null
 sleep 5
